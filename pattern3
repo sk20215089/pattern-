@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+    int a=0,rows,n;
+    printf("enter the numbe of rows ");
+    scanf("%d",&n);//imputting the value
+    for(int i=1;i<=n;i++)//loop for number of rows
+    {
+    
+        a=a+i; //storing and printing a for first coloumn using a
+        int j=a;
+        printf("%d ",j);
+    for(int d=i;d<=n-1;d++)
+    {
+        j=j+d;
+        printf("%d ",j);
+    }
+    for(int d=n-1;d>=n-i+1;d--)
+    {
+        j=j+d;
+        printf("%d ",j);
+    }
+    printf("\n");
+    }
+}
